@@ -1,0 +1,97 @@
+main 
+{
+    min-height: 80vh;
+}
+
+h3
+{
+    padding: 1rem 0;
+
+}
+
+h1
+{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+h2
+{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-select-selector {
+  height: 50px !important;
+}
+
+.ant-select-selection-placeholder,
+.ant-select-selection-item {
+  margin-top: 5px;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+/* .photo {
+  height: 50%;
+  width: 80%;
+} */
+
+.dis {
+  display: inline;
+}
+
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 66px);
+  background: url("./image.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .roomsHero {
+  background-image: url("./images/room-2.jpeg");
+  min-height: 60vh;
+} */
+
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  /* text-align: center; */
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.banner h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+/* .banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+} */
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.padd{
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+}
