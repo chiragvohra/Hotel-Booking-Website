@@ -1,8 +1,8 @@
-import User from "../models/user";
+import User from "../models/user.js";
 import Stripe from "stripe";
 import queryString from "query-string";
-import Hotel from "../models/hotel";
-import Order from "../models/order";
+import Hotel from "../models/hotel.js";
+import Order from "../models/order.js";
 
 const stripeSecret = "sk_test_51IbjczCu4J6f0rVjIzFCp7BpedciaHL9w6CLk8y6uumULBV3SHw3GBsqYxn75oml90VMnOSgy9xhOn1UJmD5ZsKf00XPUElmXl";
 

@@ -3,7 +3,7 @@ import express from "express";
 const router = express.Router();
 
 // middleware
-import { requireSignin } from "../middleware";
+import { requireSignin } from "../middleware/index.js";
 // controllers
 import {
   createConnectAccount,
@@ -12,7 +12,7 @@ import {
   payoutSetting,
   stripeSessionId,
   stripeSuccess,
-} from "../controllers/stripe";
+} from "../controllers/stripe.js";
 
 router.post("/create-connect-account", requireSignin, createConnectAccount);
 router.post("/get-account-status", requireSignin, getAccountStatus);

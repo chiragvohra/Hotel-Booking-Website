@@ -2,15 +2,17 @@ import express from "express";
 import { readdirSync } from "fs";
 import cors from "cors";
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
 import auth from './routes/auth.js';
 import hotel from './routes/hotel.js';
 import booking from './routes/booking.js';
 import stripe from './routes/stripe.js';
+import morgan from 'morgan'
 import path from 'path'
 
 
-const morgan = require("morgan");
-require("dotenv").config();
+// const morgan = require("morgan");
+dotenv.config();
 
 const app = express();
 
@@ -34,7 +36,6 @@ if(process.env.NODE_ENV === 'development')
 }
 
 // route middleware
-// readdirSync("./routes").map((r) => app.use("/api", require(`./routes/${r}`)));
 
 app.use('/api/users', auth);
 app.use('/api/hotel', booking); 
